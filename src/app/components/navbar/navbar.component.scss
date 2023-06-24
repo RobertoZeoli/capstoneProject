@@ -1,0 +1,23 @@
+$lavender: #eae8ff;
+$platinum: #d8d5d8;
+$frenchgrey: #adacb5;
+$gunmetal: #2d3142;
+$uranianblue: #b0d7ff;
+
+nav{
+  background-color: $uranianblue;
+  height: 65px;
+  img{
+    width: 80px;
+    margin: 0;
+    border-radius: 5%;
+    height: 100%;
+  }
+  .utente{
+    border-radius: 50%;
+  }
+}
+
+span{
+  transform: scale(1.5)
+}
