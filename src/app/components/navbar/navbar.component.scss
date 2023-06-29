@@ -5,8 +5,12 @@ $gunmetal: #2d3142;
 $uranianblue: #b0d7ff;
 
 nav{
-  background-color: $uranianblue;
+  background-color: white;
   height: 65px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   img{
     width: 80px;
     margin: 0;

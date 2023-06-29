@@ -4,14 +4,17 @@
     <div class="col-0 col-sm-4"></div>
 
     <form class="d-flex flex-column col-12 col-sm-4">
-      <h3 class="p-1">Effettua LogIn</h3>
+      <h3 class="p-1">Registrati</h3>
+      <label for="nome">Nome:</label>
+      <input class="mb-3 ms-3" type="text" id="nome" name="nome" placeholder="es: Mario">
+      <label for="cognome">Cognome:</label>
+      <input class="mb-3 ms-3" type="text" id="cognome" name="cognome" placeholder="es: Rossi">
       <label for="email">Email:</label>
       <input class="mb-3 ms-3" type="email" id="email" name="email" placeholder="es: mariorossi@myitaly.it">
       <label for="password">Password:</label>
       <input class="mb-3 ms-3" type="password" id="password" name="password" placeholder="Inserisci la tua password">
-      <div>
-        <input class="m-3" type="submit" id="accedi" name="accedi" value="ACCEDI">
-        <p class="m-3">Non sei registrato? <a [routerLink]="['/register']">REGISTRATI!</a></p>
+      <div class="d-flex justify-content-center">
+        <input class="m-3" type="submit" id="registra" name="registra" value="REGISTRATI">
       </div>
     </form>
 

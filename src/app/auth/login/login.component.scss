@@ -3,9 +3,12 @@ $platinum: #d8d5d8;
 $frenchgrey: #adacb5;
 $gunmetal: #2d3142;
 $uranianblue: #b0d7ff;
-
+:host{
+  overflow: hidden;
+}
 .containerSlider{
-  width: 100vw;
+  margin-top: 65px;
+
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,7 +19,7 @@ $uranianblue: #b0d7ff;
 
 .containerOmbra{
   background-color: rgba(0, 0, 0, 0.4);
-  width: 100%;
+
   height: 100%;
 }
 
