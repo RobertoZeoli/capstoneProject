@@ -14,6 +14,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { StereotipiOrealtaComponent } from './components/stereotipi-orealta/stereotipi-orealta.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ChisiamoComponent } from './components/chisiamo/chisiamo.component';
+import { LocationsComponent } from './components/locations/locations.component';
 
 
 
@@ -26,6 +27,10 @@ const route: Route[]=[
   {
     path:'home',
     component: HomeComponent,
+  },
+  {
+    path:'locations',
+    component: LocationsComponent,
   },
   {
     path:'todo',
@@ -71,6 +76,7 @@ const route: Route[]=[
     StereotipiOrealtaComponent,
     FooterComponent,
     ChisiamoComponent,
+    LocationsComponent,
 
 
   ],
