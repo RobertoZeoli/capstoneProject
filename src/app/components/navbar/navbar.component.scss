@@ -4,24 +4,33 @@ $frenchgrey: #adacb5;
 $gunmetal: #2d3142;
 $uranianblue: #b0d7ff;
 
-nav{
+nav {
   background-color: white;
-  height: 65px;
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  img{
+
+  #logo {
+    border: none;
+  }
+
+  img {
     width: 80px;
     margin: 0;
     border-radius: 5%;
     height: 100%;
+
   }
-  .utente{
+
+  .utente {
     border-radius: 50%;
+  }
+
+  a:hover {
+    border-bottom: 1px solid $platinum;
   }
 }
 
-span{
+span {
   transform: scale(1.5)
 }

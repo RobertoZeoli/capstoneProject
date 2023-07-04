@@ -4,52 +4,58 @@ $frenchgrey: #adacb5;
 $gunmetal: #2d3142;
 $uranianblue: #b0d7ff;
 
-.containerSlider{
+.containerSlider {
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   transition: background-image 1s ease-in-out;
   overflow-x: hidden;
-  margin-top: 65px;
 }
 
-.containerOmbra{
+.containerOmbra {
   background-color: rgba(0, 0, 0, 0.4);
 
   height: 100%;
 }
 
-form{
+form {
   background-color: rgba(0, 0, 0, 0.5);
   box-shadow: -1px 1px 5px 2px black;
   border-radius: 5px;
-  label{
+
+  label {
     color: $frenchgrey;
     margin-top: 1rem;
     margin-left: 1rem;
   }
-  h3{
+
+  h3 {
     color: $frenchgrey;
     text-align: center;
   }
-  input{
+
+  input {
     background-color: rgba(0, 0, 0, 0.4);
     border: none;
     color: $lavender;
     border: 1px solid $lavender;
     border-radius: 5px;
   }
-  #registra{
+
+  #registra {
     width: 40%;
     border-radius: 5px;
     border: 1px solid $uranianblue;
   }
-  #registra:hover{
+
+  #registra:hover {
     background-color: $uranianblue;
     color: $gunmetal;
   }
-  p, a{
+
+  p,
+  a {
     color: $lavender;
   }
 }

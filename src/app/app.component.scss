@@ -1,5 +1,14 @@
-:host {
+$lavender: #eae8ff;
+$platinum: #d8d5d8;
+$frenchgrey: #adacb5;
+$gunmetal: #2d3142;
+$uranianblue: #b0d7ff;
 
+app-navbar{
+  z-index: 2;
+}
 
-  height: 100vh;
+router-outlet{
+  z-index: 1;
+  margin-top: 65px;
 }

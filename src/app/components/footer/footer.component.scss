@@ -1,0 +1,30 @@
+$lavender: #eae8ff;
+$platinum: #d8d5d8;
+$frenchgrey: #adacb5;
+$gunmetal: #2d3142;
+$uranianblue: #b0d7ff;
+
+
+footer{
+  color: $frenchgrey;
+  background-color: #046e8f;
+  div{
+    text-align: center;
+  }
+  .boxFooter{
+    border-top: 1px solid ;
+    a{
+      color: $frenchgrey;
+
+      img{
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        border-radius: 50%;
+      }
+    }
+    a:hover{
+      text-decoration: none;
+    }
+  }
+}
