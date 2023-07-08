@@ -1,10 +1,11 @@
-<div class="container">
-  <div class="row">
+<div class="container mb-5">
+  <h1>SCEGLI LE TUE METE PREFERITE</h1>
+  <div class="row mt-5">
 
-    <div class="cover-card col-12 col-sm-4 col-md-3" *ngFor="let location of locations">
-      <div class="card" class=" border border-black m-1 mb-4 p-2">
+    <div class="cover-card col-12 col-sm-4 col-md-3 mb-5" *ngFor="let location of locations">
+      <div class="card  m-1 mb-4 p-2 h-100">
         <img src="{{location.immagine}}" class="card-img-top" alt="immagine">
-        <div class="card-body">
+        <div class="card-body d-flex flex-column">
           <h5 class="card-title">{{location.nome}}</h5>
           <p class="card-text">{{location.descrizione}}</p>
           <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -13,7 +14,14 @@
     </div>
 
 
-
+    <!-- BUTTON UP -->
+    <div id="up" class="d-flex justify-content-end me-3 mb-2">
+      <a href="#nav" class="d-flex justify-content-center align-items-center">
+        <span class="material-symbols-outlined">
+          expand_less
+        </span>
+      </a>
+    </div>
 
   </div>
 </div>

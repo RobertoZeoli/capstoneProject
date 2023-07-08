@@ -10,14 +10,13 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { Error404Component } from './components/error404/error404.component';
-import { TodoComponent } from './components/todo/todo.component';
-import { CompletedComponent } from './components/completed/completed.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { StereotipiOrealtaComponent } from './components/stereotipi-orealta/stereotipi-orealta.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ChisiamoComponent } from './components/chisiamo/chisiamo.component';
 import { LocationsComponent } from './components/locations/locations.component';
 import { AuthGuard } from './auth/auth.guard';
+import { PreferitiComponent } from './components/preferiti/preferiti.component';
 
 
 
@@ -43,14 +42,8 @@ const route: Route[]=[
     component: LocationsComponent,
   },
   {
-    path:'todo',
-    component: TodoComponent,
-    children:[
-      {
-        path: 'completati',
-        component: CompletedComponent,
-      }
-    ]
+    path:'preferiti',
+    component: PreferitiComponent,
   },
   {
     path:'login',
@@ -75,10 +68,6 @@ const route: Route[]=[
     component: ChisiamoComponent,
   },
   {
-    path:'completati',
-    component: CompletedComponent,
-  },
-  {
     path:'**',
     component: Error404Component,
   },
@@ -91,12 +80,11 @@ const route: Route[]=[
     HomeComponent,
     RegisterComponent,
     Error404Component,
-    TodoComponent,
-    CompletedComponent,
     StereotipiOrealtaComponent,
     FooterComponent,
     ChisiamoComponent,
     LocationsComponent,
+    PreferitiComponent,
 
 
   ],
