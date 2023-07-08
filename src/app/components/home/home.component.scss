@@ -12,16 +12,7 @@ $uranianblue: #b0d7ff;
 }
 
 /* HERO */
-#carousel1 {
-  div {
-    video {
-      width: 100%;
-      height: 100%;
-    }
-  }
-}
-
-/*#hero {
+#hero {
   height: 600px;
   background-image: url('https://www.ristorazioneitalianamagazine.it/CMS/wp-content/uploads/2022/07/Promuovi-la-tua-Italia-turismo.jpg');
   background-position: center;
@@ -34,19 +25,25 @@ $uranianblue: #b0d7ff;
 
   a {
     text-align: center;
-    width: 100px;
     background-color: white;
-    border: 1px solid white;
+    border: 1px solid $uranianblue;
     border-radius: 5px;
     text-decoration: none;
     color: $gunmetal;
     cursor: pointer;
+    width: 100px;
+    transition: width 1s;
+
+    span {
+      font-size: 2.5em;
+    }
   }
 
   a:hover {
-    background-color: $gunmetal;
-    color: $lavender;
-    border: 1px solid $uranianblue;
+    background-color: $uranianblue;
+    border: 1px solid $platinum;
+    width: 180px;
+    display: block;
   }
 
   #heroLeft,
@@ -56,8 +53,8 @@ $uranianblue: #b0d7ff;
 }
 
 hr {
-  margin: 100px 0;
-}*/
+  margin: 80px 0;
+}
 
 /* CONSIGLIATI */
 #consigliati {

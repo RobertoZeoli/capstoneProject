@@ -1,48 +1,22 @@
 <div class="container2" class="p-3">
 
   <!-- HERO -->
-  <div id="carousel1" class="carousel slide" data-bs-ride="true">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <video src="/assets/video/Scopri le bellezze italiane.mp4" autoplay loop alt="..."></video>
-      </div>
-      <div class="carousel-item">
-        <img
-          src="https://www.ristorazioneitalianamagazine.it/CMS/wp-content/uploads/2022/07/Promuovi-la-tua-Italia-turismo.jpg"
-          class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="..." class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <!--<div id="hero" class="d-flex justify-content-between">
+  <div id="hero" class="d-flex justify-content-between">
     <div id="heroLeft"></div>
     <div id="heroRight" class="d-flex flex-column justify-content-center align-items-center p-5">
       <h2>HAI VOGLIA DI SCOPRIRE LE RICCHEZZE DI QUESTA MERAVIGLIOSA TERRA?</h2>
-      <a href="#carosello" class="p-2">SCOPRI</a>
+      <a [routerLink]="['/locations']" class="d-flex justify-content-between align-items-center p-2">
+        <span class="material-symbols-outlined">
+          home
+        </span>
+        <span class="material-symbols-outlined">
+          flight_takeoff
+        </span>
+      </a>
     </div>
   </div>
 
-  <hr>-->
+  <hr>
 
   <!-- CONSIGLIATI -->
   <div id="consigliati">

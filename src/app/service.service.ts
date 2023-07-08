@@ -12,6 +12,6 @@ export class ServiceService {
   constructor(private http:HttpClient) {}
 
   recupera(){
-    return this.http.get<Locations[]>(`${this.baseURL}....`)
+    return this.http.get<Locations[]>(`${this.baseURL}localita`)
   }
 }

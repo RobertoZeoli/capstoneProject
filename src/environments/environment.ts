@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseURL: 'https://travel-advisor.p.rapidapi.com/'
+  baseURL: 'http://localhost:3000/'
 };
 
 /*

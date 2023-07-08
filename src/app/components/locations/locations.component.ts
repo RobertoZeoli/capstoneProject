@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ServiceService } from 'src/app/service.service';
+import { Locations } from 'src/app/models/locations';
 
 @Component({
   selector: 'app-locations',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LocationsComponent implements OnInit {
 
-  constructor() { }
+  locations: Locations[] | undefined;
+
+  constructor(private locationsSrv: ServiceService) { }
 
   ngOnInit(): void {
+    this.locationsSrv.recupera().subscribe((_locations: Locations[])=>{
+      this.locations = _locations;
+    })
   }
 
 }

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Route } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './auth/login/login.component';
@@ -16,6 +17,8 @@ import { StereotipiOrealtaComponent } from './components/stereotipi-orealta/ster
 import { FooterComponent } from './components/footer/footer.component';
 import { ChisiamoComponent } from './components/chisiamo/chisiamo.component';
 import { LocationsComponent } from './components/locations/locations.component';
+import { AuthGuard } from './auth/auth.guard';
+
 
 
 
@@ -28,6 +31,12 @@ const route: Route[]=[
   {
     path:'home',
     component: HomeComponent,
+    children:[
+      {
+        path: 'locations',
+        component: LocationsComponent,
+      }
+    ]
   },
   {
     path:'locations',
@@ -36,6 +45,12 @@ const route: Route[]=[
   {
     path:'todo',
     component: TodoComponent,
+    children:[
+      {
+        path: 'completati',
+        component: CompletedComponent,
+      }
+    ]
   },
   {
     path:'login',
@@ -58,6 +73,10 @@ const route: Route[]=[
   {
     path:'chiSiamo',
     component: ChisiamoComponent,
+  },
+  {
+    path:'completati',
+    component: CompletedComponent,
   },
   {
     path:'**',
@@ -84,6 +103,7 @@ const route: Route[]=[
   imports: [
     BrowserModule,
     NgbModule,
+    FormsModule,
     HttpClientModule,
     RouterModule.forRoot(route)
   ],
@@ -91,29 +111,3 @@ const route: Route[]=[
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
-
-/*import { Component, OnInit } from '@angular/core';
-import { ServiceService } from 'src/app/service.service';
-import { Locations } from 'src/app/models/locations';
-
-@Component({
-  selector: 'app-locations',
-  templateUrl: './locations.component.html',
-  styleUrls: ['./locations.component.scss']
-})
-export class LocationsComponent implements OnInit {
-
-  locations: Locations[] | undefined;
-
-  constructor(private locationSrv:ServiceService) { }
-
-  ngOnInit(): void {
-    this.locationSrv.recupera().subscribe((_locations:Locations[])=>{
-      this.locations = _locations;
-    })
-
-  }
-
-}
-*/

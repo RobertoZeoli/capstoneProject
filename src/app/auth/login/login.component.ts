@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../auth.service';
+import { Router } from '@angular/router';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -20,7 +23,7 @@ export class LoginComponent implements OnInit {
 
   currentImageIndex = 0;
 
-  constructor() { }
+  constructor(private authSrv:AuthService, private router: Router) { }
 
   ngOnInit(): void {
     setInterval(()=>{
@@ -32,4 +35,20 @@ export class LoginComponent implements OnInit {
     const randomIndex = Math.floor(Math.random() * this.backgroundImages.length);
     this.currentImageIndex = randomIndex;
   }
+
+  accedi(form: NgForm) {
+    console.log(form.value);
+    try {
+        this.authSrv.login(form.value).subscribe();
+        alert('Login effettuato!');
+        setTimeout(() => {
+            this.router.navigate(['/home']);
+        }, 500);
+
+    } catch (error) {
+        alert('Login errato');
+        console.error(error);
+        this.router.navigate(['/login']);
+    }
+}
 }

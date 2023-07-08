@@ -1,4 +1,7 @@
 export interface Locations {
-  title:string,
+  id: number,
+  nome: string,
+  descrizione: string,
+  immagine: string
 
 }

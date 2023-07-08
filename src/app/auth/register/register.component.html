@@ -3,18 +3,20 @@
 
     <div class="col-0 col-sm-4"></div>
 
-    <form class="d-flex flex-column col-12 col-sm-4">
+    <form class="d-flex flex-column col-12 col-sm-4" #form="ngForm" (ngSubmit)="registra(form)">
       <h3 class="p-1">Registrati</h3>
       <label for="nome">Nome:</label>
-      <input class="mb-3 ms-3" type="text" id="nome" name="nome" placeholder="es: Mario">
+      <input class="mb-3 ms-3" type="text" id="nome" name="nome" placeholder="es: Mario" required ngModel>
       <label for="cognome">Cognome:</label>
-      <input class="mb-3 ms-3" type="text" id="cognome" name="cognome" placeholder="es: Rossi">
+      <input class="mb-3 ms-3" type="text" id="cognome" name="cognome" placeholder="es: Rossi" required ngModel>
       <label for="email">Email:</label>
-      <input class="mb-3 ms-3" type="email" id="email" name="email" placeholder="es: mariorossi@myitaly.it">
+      <input class="mb-3 ms-3" type="email" id="email" name="email" placeholder="es: mariorossi@myitaly.it" required
+        ngModel>
       <label for="password">Password:</label>
-      <input class="mb-3 ms-3" type="password" id="password" name="password" placeholder="Inserisci la tua password">
+      <input class="mb-3 ms-3" type="password" id="password" name="password" placeholder="Inserisci la tua password"
+        required ngModel>
       <div class="d-flex justify-content-center">
-        <input class="m-3" type="submit" id="registra" name="registra" value="REGISTRATI">
+        <button class="m-3" type="submit" id="registra" name="registra">REGISTRATI</button>
       </div>
     </form>
 

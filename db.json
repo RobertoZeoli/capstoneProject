@@ -1,0 +1,154 @@
+{
+  "users": [
+    {
+      "nome": "roberto",
+      "cognome": "zeoli",
+      "email": "roberto@prova.it",
+      "password": "ciao",
+      "id": 1
+    },
+    {
+      "nome": "Mario",
+      "cognome": "Rossi",
+      "email": "mariorossi@prova.it",
+      "password": "ciao",
+      "id": 2
+    },
+    {
+      "nome": "pippo",
+      "cognome": "pluto",
+      "email": "pippopluto@prova.it",
+      "password": "ciao",
+      "id": 3
+    },
+    {
+      "nome": "nuovo",
+      "cognome": "utente",
+      "email": "nuovoutente@prova.it",
+      "password": "nuova",
+      "id": 4
+    }
+  ],
+  "localita": [
+    {
+      "id": 1,
+      "nome": "Venafro",
+      "descrizione": "Venafro è un comune italiano di 10 846 abitanti della provincia di Isernia in Molise. Ha origini molto antiche, risalenti al popolo italico dei Sanniti, dove nel III secolo a.C. combatterono aspramente contro Roma durante le guerre sannitiche.",
+      "immagine": "https://www.molisenetwork.net/wp-content/uploads/2021/06/Foto-Venafro-centro-storico-780x410.jpg"
+    },
+    {
+      "id": 2,
+      "nome": "Roma",
+      "descrizione": "Roma, capitale dell’Italia, è una grande città cosmopolita con una storia artistica, architettonica e culturale che ha influenzato tutto il mondo e che risale a quasi 3000 anni fa. Le antiche rovine come il Foro e il Colosseo testimoniano la potenza dell’antico Impero romano.",
+      "immagine": "https://www.turismoroma.it/sites/default/files/Roma%20in%20breve.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "Venezia",
+      "descrizione": "Venezia, il capoluogo della regione Veneto, è adagiata su più di 100 piccole isole all'interno di una laguna nel mare Adriatico. In questa città non esistono strade ma canali, tra cui il Canal Grande, fiancheggiato da palazzi rinascimentali e gotici. Sulla piazza centrale, piazza San Marco, sorgono la Basilica di San Marco, arricchita da mosaici bizantini, e il campanile di San Marco, da cui si possono ammirare i tetti rossi della città.",
+      "immagine": "https://images.placesonline.com/photos/424010401190506_Venezia-913722652.jpg"
+    },
+    {
+      "id": 4,
+      "nome": "Milano",
+      "descrizione": "Milano, capitale mondiale della moda e del design, è una metropoli del Nord Italia ed è capoluogo della Lombardia. Sede della Borsa Italiana, è un polo finanziario famoso anche per i ristoranti e i negozi esclusivi. Il Duomo in stile gotico e il convento di Santa Maria delle Grazie, che ospita l’affresco “L’Ultima Cena” di Leonardo da Vinci, testimoniano l'eredità artistica e culturale della città.",
+      "immagine": "https://media.istockphoto.com/id/1059724614/it/foto/duomo-di-milano-allalba-italia.jpg?s=612x612&w=0&k=20&c=Zr-aeNTlbVQJNxVQNdQPXpzrO9AxWtWHLNlb9rKDhPI="
+    },
+    {
+      "id": 5,
+      "nome": "Napoli",
+      "descrizione": "La città di Napoli è situata in Campania, ed è una delle città più antiche e storicamente ricche del paese. La sua posizione geografica lungo il golfo di Napoli e alle pendici del vulcano Vesuvio, ne fanno una meta turistica unica e interessante. La città è famosa per la sua cucina, la sua musica e la sua arte, ma anche per la sua lunga e complessa storia. In questa ricerca, esploreremo la storia, la cultura e l’economia della città di Napoli, mettendo in luce i suoi tesori storici e culturali, nonché le sfide attuali e le opportunità per il futuro.",
+      "immagine": "https://www.italiansexcellence.it/wp-content/uploads/2019/09/panorami-di-Napoli.jpg"
+    },
+    {
+      "id": 6,
+      "nome": "Verona",
+      "descrizione": "Verona è una città della regione Veneto, nel nord Italia. Il suo centro storico, costruito in un'ansa del fiume Adige, è di epoca medievale. Verona è conosciuta per essere la città di Romeo e Giulietta, i personaggi dell'opera di Shakespeare, e non a caso ospita un edificio del XVI secolo chiamato 'la casa di Giulietta', con un delizioso balcone affacciato su un cortile. L'Arena di Verona, grande anfiteatro romano del primo secolo, ospita concerti e opere liriche.",
+      "immagine": "https://hips.hearstapps.com/hmg-prod/images/colliseum-in-verona-city-italy-royalty-free-image-1640794368.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*"
+    },
+    {
+      "id": 7,
+      "nome": "Alghero",
+      "descrizione": "Alghero è una città sulla costa nord-occidentale della Sardegna, in Italia. Circondata da antiche mura, è nota per il suo centro storico lastricato. I suoi edifici catalani in stile gotico includono la Cattedrale di Santa Maria, con un imponente campanile, Palazzo Guillot e la Chiesa di San Francesco, risalente al XIV secolo. La vicina Chiesa di San Michele vanta una colorata cupola decorata con piastrelle. Il Museo del Corallo di Alghero espone coralli rossi.",
+      "immagine": "https://www.viaggi-estate.com/wp-content/uploads/2017/12/alghero.jpg"
+    },
+    {
+      "id": 8,
+      "nome": "Amalfi",
+      "descrizione": "Amalfi è una città in un ambiente naturale suggestivo sotto le ripide scogliere sulla costa sud-occidentale dell'Italia. Tra il IX e l'XI secolo, fu sede di una potente repubblica marinara. Nel cuore della città, la Cattedrale di Sant'Andrea, di epoca arabo-normanna, è caratterizzata da una facciata bizantina a righe. Il Museo Arsenale di Amalfi è un cantiere medievale ora spazio espositivo.",
+      "immagine": "https://www.turistafaidate.it/wp-content/uploads/2021/06/167391768_468007247804743_4718010621487539592_n-min-696x590.jpg"
+    },
+    {
+      "id": 9,
+      "nome": "Siena",
+      "descrizione": "Siena, città della Toscana, nel Centro Italia, si distingue per i suoi edifici medievali in mattoni. Piazza del Campo, la piazza centrale dalla caratteristica forma a ventaglio, è sede del Palazzo Pubblico (il municipio in stile gotico) e della Torre del Mangia, una slanciata torre del XIV secolo dalla cui bianca merlatura si gode di una vista stupenda. Le diciassette storiche contrade (i quartieri cittadini) si estendono tutt'intorno proprio a partire dalla piazza.",
+      "immagine": "https://cdn1.discovertuscany.com/img/siena/piazza-view-orig.jpg?auto=compress,enhance,format&w="
+    },
+    {
+      "id": 10,
+      "nome": "Capri",
+      "descrizione": "Capri, l'isola nel Golfo di Napoli, è famosa per il territorio scosceso, gli hotel esclusivi e lo shopping, che spazia dall’alta moda, al limoncello, fino ai sandali di cuoio artigianali. Uno dei siti naturali più conosciuti è la Grotta Azzurra, una cavità buia in cui l’acqua del mare si tinge di blu elettrico grazie alla presenza di una grotta sotterranea che filtra la luce del sole. Durante l'estate la spettacolare costa dell'isola, ricca di insenature, attira numerosi yacht.",
+      "immagine": "https://cdn.images.ondaplatform.com/https://www.capri.it/CapriIt/images/hero.jpg?crop=smart&width=1200&height=630"
+    },
+    {
+      "id": 11,
+      "nome": "Pompei",
+      "descrizione": "Pompei (in latino: Pompeii) è un'antica città, corrispondente all'attuale Pompei, la cui storia ha origine dal IX secolo a.C. per terminare nel 79, quando, a seguito dell'eruzione del Vesuvio, viene ricoperta sotto una coltre di ceneri e lapilli alta circa sei metri. La sua riscoperta e i relativi scavi, iniziati nel 1748, hanno riportato alla luce un sito archeologico che nel 1997 è entrato a far parte della lista dei patrimoni dell'umanità dell'UNESCO, e che è il secondo monumento italiano per visite dopo il sistema museale del Colosseo, Foro Romano e Palatino.",
+      "immagine": "https://cdn-imgix.headout.com/media/images/c77c4404fddb7b682df47383fa268bf8-1223-naples-003-naples-%7C-pompeii-01.jpg"
+    },
+    {
+      "id": 12,
+      "nome": "Bologna",
+      "descrizione": "Bologna è il vivace e antico capoluogo dell'Emilia-Romagna, nel Nord Italia. La sua Piazza Maggiore è un'ampia piazza circondata da portici, locali e strutture medievali e rinascimentali come Palazzo d'Accursio, la Fontana del Nettuno e la Basilica di San Petronio. Tra le torri medievali della città spiccano le due pendenti degli Asinelli e quella della Garisenda.",
+      "immagine": "https://a.travel-assets.com/findyours-php/viewfinder/images/res70/408000/408930-Italy.jpg"
+    },
+    {
+      "id": 13,
+      "nome": "Torino",
+      "descrizione": "Torino è il capoluogo del Piemonte ed è nota per la raffinatezza della sua architettura e della sua cucina. A nord-ovest della città svettano le Alpi. Sontuosi edifici barocchi e antiche caffetterie fiancheggiano i viali e le grandiose piazze torinesi, come piazza Castello e piazza San Carlo. Nelle vicinanze si erge l'alta guglia della Mole Antonelliana, del XIX secolo, che ospita le esposizioni interattive del Museo Nazionale del Cinema.",
+      "immagine": "https://personalevent.it/wp-content/uploads/2020/09/torino.jpg"
+    },
+    {
+      "id": 14,
+      "nome": "Pisa",
+      "descrizione": "Pisa è una città italiana della Toscana conosciuta soprattutto per la celebre torre pendente. Già fuori asse al suo completamento, nel 1372, il cilindro di marmo bianco alto 56 m non è altro che il campanile della marmorea cattedrale romanica che sorge lì accanto, in Piazza dei Miracoli. La stessa piazza ospita il monumentale Camposanto e il Battistero, dove ogni giorno cantanti non professionisti si mettono alla prova con la sua famosa acustica.",
+      "immagine": "https://tourismmedia.italia.it/is/image/mitur/20210310164211-pisa?wid=1600&hei=900&fit=constrain,1&fmt=webp"
+    },
+    {
+      "id": 15,
+      "nome": "Taormina",
+      "descrizione": "Taormina è una città collinare sulla costa orientale della Sicilia. È situata nei pressi del Monte Etna, un vulcano attivo con sentieri che arrivano alla sommità. La città è nota per il Teatro Antico di Taormina, un antico teatro greco-romano ancora oggi in funzione. Vicino al teatro, i dirupi che scendono fino al mare formano insenature con spiagge sabbiose. Una stretta striscia di sabbia collega alla minuscola Isola Bella, che è una riserva naturale.",
+      "immagine": "https://storage.googleapis.com/aditus-bucket-strapi/Copia_di_DSC_1293_9af33176f5/Copia_di_DSC_1293_9af33176f5.jpg"
+    },
+    {
+      "id": 16,
+      "nome": "Matera",
+      "descrizione": "Matera è una città situata su un affioramento roccioso in Basilicata, nell'Italia Meridionale. Include l'area dei Sassi, un complesso di Case Grotta scavate nella montagna. Evacuati nel 1952 a causa delle misere condizioni di vita, i Sassi ospitano ora musei come la Casa Grotta di Vico Solitario, con mobili e utensili artigianali d'epoca. Una delle vicine chiese rupestri è Santa Lucia alle Malve, con affreschi del XIII secolo.",
+      "immagine": "https://static2-viaggi.corriereobjects.it/wp-content/uploads/2019/10/iStock-905351688-1080x687.jpg?v=1572448301"
+    },
+    {
+      "id": 17,
+      "nome": "Palermo",
+      "descrizione": "Palermo è il capoluogo della Sicilia. La Cattedrale di Palermo, del XII secolo, ospita tombe reali, mentre l'imponente Teatro Massimo neoclassico è famoso per gli spettacoli di opera lirica. Sempre in centro si trovano il Palazzo dei Normanni, un palazzo reale risalente al IX secolo, e la Cappella Palatina, con mosaici bizantini. Gli affollati mercati includono il mercato di strada centrale Ballarò e la Vucciria, vicino al porto.",
+      "immagine": "https://tourismmedia.italia.it/is/image/mitur/1600X1000_cosa_vedere_a_palermo_hero-1?wid=1080&hei=660&fit=constrain,1&fmt=webp"
+    },
+    {
+      "id": 18,
+      "nome": "Orvieto",
+      "descrizione": "Orvieto è un piccolo borgo dell'Umbria abbarbicato su una rupe di tufo. Il Duomo (1290) con la sua facciata a mosaico ospita una scultura marmorea della Pietà. Il Pozzo di San Patrizio (XVI secolo) dispone di una doppia scala a chiocciola. Una rete di grotte sotterranee testimonia le radici etrusche della cittadina. Manufatti di quel periodo, tra cui ceramiche e oggetti in bronzo, sono esposti al Museo Archeologico Nazionale.",
+      "immagine": "https://www.borghistorici.it/wp-content/uploads/2019/02/orvieto.jpg"
+    },
+    {
+      "id": 19,
+      "nome": "Terme di Saturnia",
+      "descrizione": "Le Terme di Saturnia sono costituite da un'unica sorgente termale la quale sgorga ad una temperatura costante di 37,5 gradi e situata all'interno di una struttura termale che comprende: Parco Termale, Terme di Saturnia SPA & Golf Resort e Golf Club.",
+      "immagine": "https://voyageinstyle.net/wp-content/uploads/2021/03/TermeDiSaturnia-4.jpg"
+    },
+    {
+      "id": 20,
+      "nome": "Cortina d'Ampezzo",
+      "descrizione": "Cortina d'Ampezzo è una località sciistica dell'Italia Settentrionale. Fa parte del comprensorio sciistico Dolomiti Superski, che comprende il Passo di Falzarego, con le ampie piste da sci. I siti dei Giochi invernali del 1956, tenutisi a Cortina, includono lo Stadio Olimpico del Ghiaccio, la Pista Olimpica di Bob, intitolata al campione Eugenio Monti, e il Trampolino Italia. A ovest della città, l'area delle Tofane ha uno snowpark per salti e trick. Il Passo Giau è un sito di snowkiting.",
+      "immagine": "https://www.offerte-vacanza.com/foto-localita/cortina-d-ampezzo-2.jpg"
+    }
+  ]
+}
