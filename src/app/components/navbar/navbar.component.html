@@ -31,13 +31,16 @@
         </span>
       </button>
       <ul class="dropdown-menu dropdown-menu-left me-3">
-        <li *ngIf="emptyLocalStorage"><a class="dropdown-item" [routerLink]="['login']"
-            routerLinkActive="active">LogIn</a></li>
-        <li *ngIf="emptyLocalStorage"><a class="dropdown-item" [routerLink]="['register']"
-            routerLinkActive="active">Registrati</a></li>
-        <li *ngIf="!emptyLocalStorage"><a class="dropdown-item" [routerLink]="['preferiti']"
-            routerLinkActive="active">Preferiti</a></li>
-        <li *ngIf="!emptyLocalStorage"><a class="dropdown-item" [routerLink]="['register']" routerLinkActive="active"
+        <!-- <li>
+          <h3 *ngIf="utente" class="dropdown-item">Ciao {{utente.user.name}}</h3>
+        </li> -->
+        <li *ngIf="!utente"><a class="dropdown-item" [routerLink]="['login']" routerLinkActive="active">LogIn</a></li>
+        <li *ngIf="!utente"><a class="dropdown-item" [routerLink]="['register']"
+            routerLinkActive="active">Registrati</a>
+        </li>
+        <li *ngIf="utente"><a class="dropdown-item" [routerLink]="['preferiti']" routerLinkActive="active">Preferiti</a>
+        </li>
+        <li *ngIf="utente"><a class="dropdown-item" [routerLink]="['register']" routerLinkActive="active"
             (click)="logout()">LogOut</a></li>
       </ul>
     </div>
