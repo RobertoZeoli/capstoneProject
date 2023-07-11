@@ -10,7 +10,7 @@ import { NgForm } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
 
-  backgroundImages: string[]=[
+  backgroundImages: string[] = [
     'https://cdn.travelpulse.com/images/31aaedf4-a957-df11-b491-006073e71405/bb73aab8-f2bf-4278-88c3-33dd628df23f/630x355.jpg',
     'https://i0.wp.com/handluggageonly.co.uk/wp-content/uploads/2016/03/Positano-Weather.jpg?fit=1600%2C1066&ssl=1',
     'https://www.unitremilano.it/wp-content/uploads/2019/04/Il-Duomo-di-Milano.jpg',
@@ -23,32 +23,32 @@ export class LoginComponent implements OnInit {
 
   currentImageIndex = 0;
 
-  constructor(private authSrv:AuthService, private router: Router) { }
+  constructor(private authSrv: AuthService, private router: Router) { }
 
   ngOnInit(): void {
-    setInterval(()=>{
+    setInterval(() => {
       this.changeBackground();
-    },4000)
+    }, 4000)
   }
 
-  changeBackground(){
+  changeBackground() {
     const randomIndex = Math.floor(Math.random() * this.backgroundImages.length);
     this.currentImageIndex = randomIndex;
   }
 
-  accedi(form: NgForm) {
+  async accedi(form: NgForm) {
     console.log(form.value);
     try {
-        this.authSrv.login(form.value).subscribe();
-        alert('Login effettuato!');
-        setTimeout(() => {
-            this.router.navigate(['/home']);
-        }, 500);
+      await this.authSrv.login(form.value).toPromise()
+      alert('Login effettuato!');
+      setTimeout(() => {
+        this.router.navigate(['/home']);
+      }, 500);
 
     } catch (error) {
-        alert('Login errato');
-        console.error(error);
-        this.router.navigate(['/login']);
+      alert('Login errato');
+      console.error(error);
+      this.router.navigate(['/login']);
     }
-}
+  }
 }

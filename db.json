@@ -1,32 +1,25 @@
 {
   "users": [
     {
-      "nome": "roberto",
-      "cognome": "zeoli",
-      "email": "roberto@prova.it",
-      "password": "ciao",
-      "id": 1
+      "email": "provadue@prova.it",
+      "password": "$2a$10$1UTS48nHWOe.eF3l8HR27uTYG7HqrZivZGTUZiT8B9pqmGoqvqmiu",
+      "nome": "prova",
+      "cognome": "due",
+      "id": 5
     },
     {
+      "email": "robertozeoli@prova.it",
+      "password": "$2a$10$HczMa8HvST8FBxqr4VdzAOcuRkeOgHPv4UcRAlZyeGwLLi3Q5LpCO",
+      "nome": "Roberto",
+      "cognome": "Zeoli",
+      "id": 6
+    },
+    {
+      "email": "mariorossi@prova.it",
+      "password": "$2a$10$tSW7olp2IPyPjgHLL6FQD.Cdx1INF7Xfj2NMS0cQ2spJS5fdWlAhS",
       "nome": "Mario",
       "cognome": "Rossi",
-      "email": "mariorossi@prova.it",
-      "password": "ciao",
-      "id": 2
-    },
-    {
-      "nome": "pippo",
-      "cognome": "pluto",
-      "email": "pippopluto@prova.it",
-      "password": "ciao",
-      "id": 3
-    },
-    {
-      "nome": "nuovo",
-      "cognome": "utente",
-      "email": "nuovoutente@prova.it",
-      "password": "nuova",
-      "id": 4
+      "id": 7
     }
   ],
   "localita": [

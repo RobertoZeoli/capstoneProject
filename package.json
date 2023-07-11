@@ -2,10 +2,10 @@
   "name": "capstone-project",
   "version": "0.0.0",
   "scripts": {
-    "backend": "json-server-auth --watch db.json --port 4200",
+    "backend": "json-server-auth --watch db.json --port 3000",
     "fullstack": "concurrently \"npm run backend\" \"npm run start\"",
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve -o",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"

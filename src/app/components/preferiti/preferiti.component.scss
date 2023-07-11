@@ -7,6 +7,12 @@
   background-position: center;
 }
 
+#title {
+  img {
+    width: 5%;
+  }
+}
+
 #left {
   width: 45%;
   height: 100%;
@@ -25,11 +31,10 @@
   100% {
     rotate: 360deg;
   }
-
 }
 
 .card:hover {
-  animation: rotation 1.5s;
+  animation: rotation 1s;
   cursor: pointer;
 }
 

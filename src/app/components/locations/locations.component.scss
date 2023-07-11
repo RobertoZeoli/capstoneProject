@@ -13,6 +13,10 @@ h1 {
     border-radius: 10px;
     box-shadow: -1px 1px 20px 5px gray;
     transition: transform 0.5s;
+
+    img {
+      height: 30%;
+    }
   }
 
   .card:hover {
