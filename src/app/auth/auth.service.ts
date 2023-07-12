@@ -21,6 +21,15 @@ export class AuthService {
 
   constructor(private http: HttpClient, private router: Router) { }
 
+  recupera(): void {
+    const ls = localStorage.getItem("user")
+    if (ls !== null) {
+      this.authSubj.next(JSON.parse(ls))
+    } else {
+      this.authSubj.next(null)
+    }
+  }
+
   login(data: { email: string, password: string }) {
     return this.http.post<Auth>(`${this.baseURL}login`, data).pipe(
       tap((data) => {

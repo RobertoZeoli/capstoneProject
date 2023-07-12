@@ -12,6 +12,7 @@ export class NavbarComponent implements OnInit {
 
   emptyLocalStorage!: boolean;
   utente!: Auth | null;
+  isLogged!: boolean;
 
   constructor(private authSrv: AuthService,) {
     /* this.emptyLocalStorage = localStorage.length === 0; */
@@ -26,7 +27,12 @@ export class NavbarComponent implements OnInit {
        this.emptyLocalStorage = false
      } else this.emptyLocalStorage = true
      console.log(this.emptyLocalStorage) */
-
+    this.authSrv.user$.subscribe(data => {
+      console.log(data);
+      if (data !== null) {
+        this.isLogged = true
+      } else this.isLogged = false
+    })
 
   }
 

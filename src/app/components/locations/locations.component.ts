@@ -22,26 +22,29 @@ export class LocationsComponent implements OnInit {
   constructor(private locationsSrv: LocationService, private authSrv: AuthService) { }
 
   ngOnInit(): void {
+    this.authSrv.user$.subscribe((_utente) => {
+      this.utente = _utente;
+    });
+
+
     this.locationsSrv.recupera().subscribe((_locations: Locations[]) => {
       this.locations = _locations;
     });
 
-    this.authSrv.user$.subscribe((_utente) => {
-      this.utente = _utente;
-    });
+    this.recuperaPreferiti(this.utente!.user.id);
 
     /*   this.recuperaPreferiti(this.utente!.user.id);
       this.recuperaLocalita(); */
   }
 
-  recuperaPreferiti(userId: number) {
+  recuperaPreferiti(userId: number): void {
     this.locationsSrv.recuperaPreferiti(userId).subscribe((likes: Preferiti[]) => {
       this.preferiti = likes;
     }
     )
   }
 
-  aggiungiPreferito(idLocation: number) {
+  aggiungiPreferito(idLocation: number): void {
     const preferito: Preferiti = {
       userId: this.utente!.user.id,
       locationId: idLocation,
