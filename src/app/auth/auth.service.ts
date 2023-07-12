@@ -62,13 +62,4 @@ export class AuthService {
     return this.http.post(`${this.baseURL}users`, data);
   }
 
-  /* checkLogin() {
-    /* return new Observable<Auth>((observer) => {
-      observer.next(
-        JSON.parse(localStorage.getItem('user')!)
-      )
-    })
-    return this.user$
-  } */
-
 }

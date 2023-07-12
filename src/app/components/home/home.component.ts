@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ServiceService } from 'src/app/service.service';
 import { Locations } from 'src/app/models/locations';
 
 
@@ -15,7 +14,7 @@ export class HomeComponent implements OnInit {
   locations: Locations[] | undefined;
 
 
-  constructor(private locationsSrv: ServiceService) { }
+  constructor() { }
 
   ngOnInit(): void {
     this.changeBackgroundBanner();
@@ -37,9 +36,4 @@ export class HomeComponent implements OnInit {
 
   }
 
-  recupera() {
-    this.locationsSrv.recupera().subscribe((_locations: Locations[]) => {
-      this.locations = _locations;
-    })
-  }
 }

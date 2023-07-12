@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Auth } from 'src/app/auth/auth.interface';
 import { AuthService } from 'src/app/auth/auth.service';
 import { Locations } from 'src/app/models/locations';
-import { ServiceService } from 'src/app/service.service';
+import { LocationService } from '../locations/location.service';
 import { Preferiti } from 'src/app/models/preferiti';
 import { environment } from 'src/environments/environment';
 
@@ -20,7 +20,7 @@ export class PreferitiComponent implements OnInit {
   userId!: number;
 
 
-  constructor(private authSrv: AuthService, private locationSrv: ServiceService) {
+  constructor(private authSrv: AuthService, private locationSrv: LocationService) {
     this.authSrv.user$.subscribe((_utente) => {
       this.utente = _utente;
     });

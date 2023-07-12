@@ -1,5 +1,5 @@
 export interface Preferiti {
-  id:number,
-  immagine:string,
-  nome:string
+  locationId: number;
+  userId: number;
+  id?: number;
 }

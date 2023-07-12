@@ -13,14 +13,15 @@
         </div>
 
         <div class="m-1">
-          <a href="#" class="btn btn-primary d-flex align-items-center justify-content-center"><span
-              class="material-symbols-outlined align-items-center justify-content-center">
-              favorite
-            </span></a>
+          <button type="button"
+            (click)="isPreferito(location.id) ? eliminaPreferito(location.id) : aggiungiPreferito(location.id)"> ❤
+          </button>
+          <!-- l ngClass da problemi e fa sparire le immagini dalle card tranne la prima o.O -->
         </div>
       </div>
     </div>
 
+    <!--   (click)="isPreferito(location.id) ? eliminaPreferito(location.id) : aggiungiPreferito(location.id)" [ngClass]="{'bg-danger': isPreferito(location.id), 'bg-white': !isPreferito(location.id)}" -->
 
     <!-- BUTTON UP -->
     <div id="up" class="d-flex justify-content-end me-3 mb-2">

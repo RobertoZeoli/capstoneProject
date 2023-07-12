@@ -7,53 +7,12 @@
     <div class="col-11 col-sm-7">
       <div class="row justify-content-evenly">
 
-        <div class="card col-12 col-sm-5 m-2 p-0">
-          <img
-            src="https://img.freepik.com/premium-photo/painting-mountain-landscape-with-river-foreground-mountain-background_864560-11.jpg?w=2000"
-            class="card-img-top p-3" alt="...">
+        <div class="card col-12 col-sm-5 m-2 p-0" *ngFor="let location of locations">
+          <img src="{{location.immagine}}" class="card-img-top p-3" alt="...">
           <div class="card-body">
-            <h5 class="card-text text-center">Località</h5>
+            <h5 class="card-text text-center">{{location.nome}}</h5>
           </div>
         </div>
-
-        <div class="card col-12 col-sm-5 m-2 p-0">
-          <img
-            src="https://img.freepik.com/premium-photo/painting-mountain-landscape-with-river-foreground-mountain-background_864560-11.jpg?w=2000"
-            class="card-img-top p-3" alt="...">
-          <div class="card-body">
-            <h5 class="card-text text-center">Località</h5>
-          </div>
-        </div>
-
-        <div class="card col-12 col-sm-5 m-2 p-0">
-          <img
-            src="https://img.freepik.com/premium-photo/painting-mountain-landscape-with-river-foreground-mountain-background_864560-11.jpg?w=2000"
-            class="card-img-top p-3" alt="...">
-          <div class="card-body">
-            <h5 class="card-text text-center">Località</h5>
-          </div>
-        </div>
-
-        <div class="card col-12 col-sm-5 m-2 p-0">
-          <img
-            src="https://img.freepik.com/premium-photo/painting-mountain-landscape-with-river-foreground-mountain-background_864560-11.jpg?w=2000"
-            class="card-img-top p-3" alt="...">
-          <div class="card-body">
-            <h5 class="card-text text-center">Località</h5>
-          </div>
-        </div>
-
-        <div class="card col-12 col-sm-5 m-2 p-0">
-          <img
-            src="https://img.freepik.com/premium-photo/painting-mountain-landscape-with-river-foreground-mountain-background_864560-11.jpg?w=2000"
-            class="card-img-top p-3" alt="...">
-          <div class="card-body">
-            <h5 class="card-text text-center">Località</h5>
-          </div>
-        </div>
-
-
-
 
       </div>
     </div>
