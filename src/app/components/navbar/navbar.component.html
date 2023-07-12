@@ -34,7 +34,8 @@
         <!-- <li>
           <h3 *ngIf="utente" class="dropdown-item">Ciao {{utente.user.name}}</h3>
         </li> -->
-        <li *ngIf="!utente"><a class="dropdown-item" [routerLink]="['login']" routerLinkActive="active">LogIn</a></li>
+        <li *ngIf="!utente"><a class="dropdown-item" [routerLink]="['login']" routerLinkActive="active">LogIn</a>
+        </li>
         <li *ngIf="!utente"><a class="dropdown-item" [routerLink]="['register']"
             routerLinkActive="active">Registrati</a>
         </li>

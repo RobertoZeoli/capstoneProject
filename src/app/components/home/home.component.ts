@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ServiceService } from 'src/app/service.service';
+import { Locations } from 'src/app/models/locations';
 
 
 
@@ -10,9 +12,10 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   backgroundBanner!: string;
+  locations: Locations[] | undefined;
 
 
-  constructor() { }
+  constructor(private locationsSrv: ServiceService) { }
 
   ngOnInit(): void {
     this.changeBackgroundBanner();
@@ -31,5 +34,12 @@ export class HomeComponent implements OnInit {
     setTimeout(() => {
       this.changeBackgroundBanner();
     }, 3000);
+
+  }
+
+  recupera() {
+    this.locationsSrv.recupera().subscribe((_locations: Locations[]) => {
+      this.locations = _locations;
+    })
   }
 }

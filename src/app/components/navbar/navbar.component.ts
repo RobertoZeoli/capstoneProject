@@ -13,10 +13,12 @@ export class NavbarComponent implements OnInit {
   emptyLocalStorage!: boolean;
   utente!: Auth | null;
 
-  constructor(private authSrv: AuthService) {
+  constructor(private authSrv: AuthService,) {
     /* this.emptyLocalStorage = localStorage.length === 0; */
     /* this.emptyLocalStorage = localStorage.getItem("utente")?.length === 0; */
-
+    this.authSrv.user$.subscribe((_utente) => {
+      this.utente = _utente;
+    })
   }
 
   ngOnInit(): void {
@@ -24,13 +26,11 @@ export class NavbarComponent implements OnInit {
        this.emptyLocalStorage = false
      } else this.emptyLocalStorage = true
      console.log(this.emptyLocalStorage) */
-    this.authSrv.user$.subscribe((_utente) => {
-      this.utente = _utente;
-    })
+
+
   }
 
   logout() {
     this.authSrv.logout();
   }
-
 }
