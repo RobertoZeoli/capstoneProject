@@ -26,11 +26,6 @@ export class LocationsComponent implements OnInit {
       this.locations = _locations;
     });
 
-    this.locationsSrv.recupera().subscribe((films: Locations[]) => {
-      this.location = films;
-    }); /* controllare quel recupera */
-
-
     this.authSrv.user$.subscribe((_utente) => {
       this.utente = _utente;
     });
