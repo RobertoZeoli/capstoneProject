@@ -22,6 +22,27 @@
       "id": 7
     }
   ],
+  "preferiti": [
+    {
+      "userId": 7,
+      "locationId": 8,
+      "id": 1
+    },
+    {
+      "userId": 7,
+      "locationId": 6,
+      "immagine": "",
+      "nome": "",
+      "id": 8
+    },
+    {
+      "userId": 7,
+      "locationId": 3,
+      "immagine": "",
+      "nome": "",
+      "id": 9
+    }
+  ],
   "localita": [
     {
       "id": 1,

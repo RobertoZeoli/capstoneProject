@@ -25,6 +25,16 @@ h1 {
     cursor: pointer;
     transform: scale(1.1);
   }
+
+  button {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+  }
+
+  button:hover {
+    background-color: $uranianblue;
+  }
 }
 
 /* Button up */

@@ -1,27 +1,25 @@
-# CapstoneProject
+# MY ITALY ❤✈
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.11.
+## DESCRIZIONE PROGETTO
 
-## Development server
+MyItaly è un sito che promuove il turismo italiano. La piattaforma mette a disposizione una struttura di preferiti per salvare in un profilo privato tutte le destinazioni che piacciono all'utente.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Ho deciso di creare questo sito perché sono un'amante dei viaggi e sono innamorato del nostro Paese.
 
-## Code scaffolding
+Il progetto è stato realizzato utilizzando [Angular CLI](https://github.com/angular/angular-cli) version 14.2.11.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## COME INSTALLARE ED ESEGUIRE IL PORGETTO
 
-## Build
+Per il corretto funzionamento del progetto seguire i seguenti passaggi:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+npm i (per la ricostruzione delle dipendenze del progetto)
+npm i json-server json-server-auth
+npm i @auth0/angular-jwt
+npm i concurrently
 
-## Running unit tests
+Per avviare il progetto scrivere il seguente comando nel terminale: "npm run fullstack".
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## SVILUPPI FUTURI
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+In futuro ho intenzione di ampliare la base dati delle località inserendo anche una suddivisione in modo da poter fare una ricerca per regioni.
+Inoltre mi piacerebbe aggiungere una sezione con tutte le attività che si possono fare

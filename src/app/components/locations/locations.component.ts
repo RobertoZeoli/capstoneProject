@@ -32,9 +32,6 @@ export class LocationsComponent implements OnInit {
     });
 
     this.recuperaPreferiti(this.utente!.user.id);
-
-    /*   this.recuperaPreferiti(this.utente!.user.id);
-      this.recuperaLocalita(); */
   }
 
   recuperaPreferiti(userId: number): void {
@@ -48,6 +45,9 @@ export class LocationsComponent implements OnInit {
     const preferito: Preferiti = {
       userId: this.utente!.user.id,
       locationId: idLocation,
+
+
+      /* HO PROVATO AD AGGIUNGERE LE PROPRIETA IMMAGINE E NOME CON CAMPO VUOTO E ALMENO MI VISUALIZZA LE CARD VUOTE */
     };
 
     this.locationsSrv.aggiungiPreferito(preferito).subscribe(() => {
@@ -75,8 +75,5 @@ export class LocationsComponent implements OnInit {
 
 
 }
-
-
-/* recuperaPreferiti(){ } */
 
 

@@ -14,7 +14,6 @@ import { environment } from 'src/environments/environment';
 export class PreferitiComponent implements OnInit {
 
   locations: Locations[] = [];
-
   utente!: Auth | null;
   preferiti: Preferiti[] = [];
   userId!: number;
@@ -31,19 +30,30 @@ export class PreferitiComponent implements OnInit {
     this.locationSrv.recuperaPreferiti(this.userId).subscribe((likes: Preferiti[]) => {
       this.preferiti = likes;
     });
-    /* setTimeout(() => {
-      this.stampaPreferiti();
-    }, 500); */
+
+
   }
 
-  /* stampaPreferiti() {
-    this.preferiti.forEach((location) => {
-      if (location.locationId) {
-        this.locationSrv.dettaglioLocation(location.movieId).subscribe((dettaglio) => {
-          this.locationSrv.push(dettaglio);
-        })
-      }
+  stampaPreferiti() {
+    this.preferiti.forEach((localita) => {
+      this.locations.push(location)
     })
-  } */
+  }
+
+  /* setTimeout(() => {
+       this.stampaPreferiti();
+     }, 500); */
+
+
+
+  /*  stampaPreferiti() {
+     this.preferiti.forEach((location) => {
+       if (location.locationId) {
+         this.locationSrv.dettaglioLocation(location.movieId).subscribe((dettaglio) => {
+           this.locationSrv.push(dettaglio);
+         })
+       }
+     })
+   } */
 
 }

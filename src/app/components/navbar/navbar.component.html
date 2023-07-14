@@ -31,9 +31,6 @@
         </span>
       </button>
       <ul class="dropdown-menu dropdown-menu-left me-3">
-        <!-- <li>
-          <h3 *ngIf="utente" class="dropdown-item">Ciao {{utente.user.name}}</h3>
-        </li> -->
         <li *ngIf="!isLogged"><a class="dropdown-item" [routerLink]="['login']" routerLinkActive="active">LogIn</a>
         </li>
         <li *ngIf="!isLogged"><a class="dropdown-item" [routerLink]="['register']"

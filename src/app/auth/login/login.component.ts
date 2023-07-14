@@ -40,7 +40,7 @@ export class LoginComponent implements OnInit {
     console.log(form.value);
     try {
       await this.authSrv.login(form.value).toPromise()
-      alert(`Login effettuato! Benvenuto`);
+      alert(`Login effettuato! Benvenuto!`);
       setTimeout(() => {
         this.router.navigate(['/home']);
       }, 500);

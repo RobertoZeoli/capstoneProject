@@ -1,5 +1,5 @@
 <div class="container mb-5">
-  <h1>SCEGLI LE TUE METE PREFERITE! 🧳</h1>
+  <h1 id="titolo">SCEGLI LE TUE METE PREFERITE! 🧳</h1>
   <div class="row mt-5">
 
     <div class="cover-card col-12 col-sm-6 col-xl-3 mb-5" *ngFor="let location of locations">
@@ -14,7 +14,8 @@
 
         <div class="m-1">
           <button type="button"
-            (click)="isPreferito(location.id) ? eliminaPreferito(location.id) : aggiungiPreferito(location.id)"> ❤
+            (click)="isPreferito(location.id) ? eliminaPreferito(location.id) : aggiungiPreferito(location.id)"
+            [ngClass]="isPreferito(location.id) ?'text-danger': 'text-dark' "> ❤
           </button>
           <!-- l ngClass da problemi e fa sparire le immagini dalle card tranne la prima o.O -->
         </div>
@@ -25,7 +26,7 @@
 
     <!-- BUTTON UP -->
     <div id="up" class="d-flex justify-content-end me-3 mb-2">
-      <a href="#nav" class="d-flex justify-content-center align-items-center">
+      <a href="locations" class="d-flex justify-content-center align-items-center">
         <span class="material-symbols-outlined">
           expand_less
         </span>
