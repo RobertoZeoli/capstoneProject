@@ -34,11 +34,6 @@ export class PreferitiComponent implements OnInit {
 
   }
 
-  stampaPreferiti() {
-    this.preferiti.forEach((localita) => {
-      this.locations.push(location)
-    })
-  }
 
   /* setTimeout(() => {
        this.stampaPreferiti();
