@@ -5,25 +5,34 @@ $gunmetal: #2d3142;
 $uranianblue: #b0d7ff;
 
 
-footer{
+footer {
   color: $frenchgrey;
   background-color: #046e8f;
-  div{
+
+  div {
     text-align: center;
   }
-  .boxFooter{
-    border-top: 1px solid ;
-    a{
+
+  .boxFooter {
+    border-top: 1px solid;
+
+    a {
       color: $frenchgrey;
 
-      img{
+      .social {
         width: 40px;
         height: 40px;
         margin: 10px;
-        border-radius: 50%;
+        border-radius: 20px;
+      }
+
+      .linkedin {
+        width: 20px;
+        height: 20px;
       }
     }
-    a:hover{
+
+    a:hover {
       text-decoration: none;
     }
   }

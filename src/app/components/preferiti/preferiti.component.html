@@ -1,13 +1,17 @@
 <div id="container">
   <h1 class="text-center pt-2">PREFERITI 😍</h1>
 
+  <div class="text-center" *ngIf="!locations">
+    <span class="spinner-border"></span>
+  </div>
+
   <div class="row justify-content-center">
     <div class=" col-0 col-sm-5"></div>
 
     <div class="col-11 col-sm-7">
       <div class="row justify-content-evenly">
 
-        <div class="card col-12 col-sm-5 m-2 p-0" *ngFor="let location of locations">
+        <div class="card col-12 col-sm-5 m-2 p-0" *ngFor="let location  of locations">
           <img src=" {{location.immagine}}" class="card-img-top p-3" alt="...">
           <div class="card-body">
             <h5 class="card-text text-center">{{location.nome}}</h5>

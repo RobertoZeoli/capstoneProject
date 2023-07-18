@@ -12,9 +12,7 @@ export class LocationService {
 
   baseUrl = environment.baseURL;
 
-  constructor(private http: HttpClient, private authSrv: AuthService) {
-    this.recupera()
-  }
+  constructor(private http: HttpClient, private authSrv: AuthService) { }
 
   /* questo recupera() popola le card */
   recupera() {
@@ -25,9 +23,9 @@ export class LocationService {
     return this.http.get<Preferiti[]>(`${this.baseUrl}preferiti?userId=${userId}`)
   }
 
-  recuperaLocalita() {
+  /* recuperaLocalita() {
     return this.http.get<Locations[]>(`${this.baseUrl}id`)
-  }
+  } */
 
   aggiungiPreferito(preferito: Preferiti) {
     return this.http.post(`${this.baseUrl}preferiti`, preferito)
@@ -36,4 +34,10 @@ export class LocationService {
   rimuoviPreferito(preferitoId: number) {
     return this.http.delete(`${this.baseUrl}preferiti/${preferitoId}`)
   }
+
+  dettaglioPreferito(id: number) {
+    return this.http.get<Locations>(`${this.baseUrl}localita/${id}`)
+  }
+
 }
+

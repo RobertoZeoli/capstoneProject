@@ -4,7 +4,7 @@
 
 MyItaly è un sito che promuove il turismo italiano. La piattaforma mette a disposizione una struttura di preferiti per salvare in un profilo privato tutte le destinazioni che piacciono all'utente.
 
-Ho deciso di creare questo sito perché sono un'amante dei viaggi e sono innamorato del nostro Paese.
+Ho deciso di creare questo sito perché sono un'amante dei viaggi e sono innamorato del mio Paese.
 
 Il progetto è stato realizzato utilizzando [Angular CLI](https://github.com/angular/angular-cli) version 14.2.11.
 

@@ -13,11 +13,11 @@ import { Preferiti } from 'src/app/models/preferiti';
 })
 export class LocationsComponent implements OnInit {
 
-  location!: Locations[];
+  locations!: Locations[];
   utente!: Auth | null;
   preferiti!: Preferiti[];
 
-  locations: Locations[] | undefined;
+
 
   constructor(private locationsSrv: LocationService, private authSrv: AuthService) { }
 
@@ -26,19 +26,25 @@ export class LocationsComponent implements OnInit {
       this.utente = _utente;
     });
 
+    setTimeout(() => {
+      this.locationsSrv.recupera().subscribe((_locations: Locations[]) => {
+        this.locations = _locations;
+      });
 
-    this.locationsSrv.recupera().subscribe((_locations: Locations[]) => {
-      this.locations = _locations;
-    });
+      this.recuperaPreferiti(this.utente!.user.id);
+    }, 1500)
 
-    this.recuperaPreferiti(this.utente!.user.id);
+
+
   }
+
+
 
   recuperaPreferiti(userId: number): void {
     this.locationsSrv.recuperaPreferiti(userId).subscribe((likes: Preferiti[]) => {
       this.preferiti = likes;
     }
-    )
+    );
   }
 
   aggiungiPreferito(idLocation: number): void {
@@ -64,12 +70,12 @@ export class LocationsComponent implements OnInit {
     }
   }
 
-  isPreferito(locationId: number): boolean {
-    return this.preferiti.some((p) => p.locationId === locationId)
+  isPreferito(localitaId: number): boolean {
+    return this.preferiti.some((p) => p.locationId === localitaId);
   }
 
-  getIdPreferito(locationId: number): number | undefined {
-    const preferito = this.preferiti.find((p) => p.locationId === locationId);
+  getIdPreferito(localitaId: number): number | undefined {
+    const preferito = this.preferiti.find((p) => p.locationId === localitaId);
     return preferito?.id;
   }
 

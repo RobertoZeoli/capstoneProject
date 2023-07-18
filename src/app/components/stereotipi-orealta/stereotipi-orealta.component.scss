@@ -4,9 +4,6 @@ $frenchgrey: #adacb5;
 $gunmetal: #2d3142;
 $uranianblue: #b0d7ff;
 
-#container {
-  background-color: antiquewhite;
-}
 
 header {
   margin-bottom: 100px;
@@ -27,6 +24,7 @@ header :nth-child(2) {
   height: 200px;
   border: none;
   box-shadow: -1px 1px 10px 5px grey;
+  background-color: $lavender;
 
   img {
     width: 100%;

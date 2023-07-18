@@ -27,28 +27,22 @@ export class PreferitiComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
     this.locationSrv.recuperaPreferiti(this.userId).subscribe((likes: Preferiti[]) => {
       this.preferiti = likes;
-    });
+    })
 
-
+    this.stampaPreferiti();
   }
 
 
-  /* setTimeout(() => {
-       this.stampaPreferiti();
-     }, 500); */
-
-
-
-  /*  stampaPreferiti() {
-     this.preferiti.forEach((location) => {
-       if (location.locationId) {
-         this.locationSrv.dettaglioLocation(location.movieId).subscribe((dettaglio) => {
-           this.locationSrv.push(dettaglio);
-         })
-       }
-     })
-   } */
-
+  stampaPreferiti() {
+    this.preferiti.forEach((loc) => {
+      if (loc.locationId) {
+        this.locationSrv.dettaglioPreferito(loc.locationId).subscribe((stampa) => {
+          this.locations.push(stampa)
+        })
+      }
+    })
+  }
 }
