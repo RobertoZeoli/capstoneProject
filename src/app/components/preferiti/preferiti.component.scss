@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
 #container {
-  height: 100vh;
+  height: 100%;
   background-image: url('https://img.freepik.com/premium-photo/travel-background-items-traveling-flights-tickets-passport-money-sunglasses-colored-background-rest-vacation-concept_90380-772.jpg');
   background-size: cover;
   background-position: center;
 }
 
-#title {
-  img {
-    width: 5%;
-  }
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 30px;
 }
 
 #left {
@@ -33,12 +32,22 @@
   }
 }
 
+.card {
+  img {
+    height: 70%;
+  }
+
+  .card-body {
+    height: 30%;
+  }
+}
+
 .card:hover {
   animation: rotation 1s;
   cursor: pointer;
 }
 
 .card-text {
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-family: 'Dancing Script', cursive;
 }

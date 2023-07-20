@@ -11,7 +11,7 @@
 
         <img src="{{location.immagine}}" class="card-img-top" alt="immagine">
         <div class="card-body d-flex flex-column">
-          <h5 class="card-title">{{location.nome}}</h5>
+          <h2 class="card-title">{{location.nome}}</h2>
           <p class="card-text">{{location.descrizione}}</p>
 
         </div>
@@ -21,12 +21,10 @@
             (click)="isPreferito(location.id) ? eliminaPreferito(location.id) : aggiungiPreferito(location.id)"
             [ngClass]="isPreferito(location.id) ?'text-danger': 'text-dark' "> ❤
           </button>
-          <!-- l ngClass da problemi e fa sparire le immagini dalle card tranne la prima o.O -->
+          <!-- l ngClass da problemi e fa sparire le immagini dalle card tranne la prima -->
         </div>
       </div>
     </div>
-
-    <!--   (click)="isPreferito(location.id) ? eliminaPreferito(location.id) : aggiungiPreferito(location.id)" [ngClass]="{'bg-danger': isPreferito(location.id), 'bg-white': !isPreferito(location.id)}" -->
 
     <!-- BUTTON UP -->
     <div id="up" class="d-flex justify-content-end me-3 mb-2">

@@ -21,6 +21,7 @@ export class LocationsComponent implements OnInit {
 
   constructor(private locationsSrv: LocationService, private authSrv: AuthService) { }
 
+
   ngOnInit(): void {
     this.authSrv.user$.subscribe((_utente) => {
       this.utente = _utente;
@@ -33,9 +34,6 @@ export class LocationsComponent implements OnInit {
 
       this.recuperaPreferiti(this.utente!.user.id);
     }, 1500)
-
-
-
   }
 
 
@@ -51,9 +49,6 @@ export class LocationsComponent implements OnInit {
     const preferito: Preferiti = {
       userId: this.utente!.user.id,
       locationId: idLocation,
-
-
-      /* HO PROVATO AD AGGIUNGERE LE PROPRIETA IMMAGINE E NOME CON CAMPO VUOTO E ALMENO MI VISUALIZZA LE CARD VUOTE */
     };
 
     this.locationsSrv.aggiungiPreferito(preferito).subscribe(() => {

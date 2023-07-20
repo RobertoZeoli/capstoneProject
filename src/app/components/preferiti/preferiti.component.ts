@@ -22,19 +22,23 @@ export class PreferitiComponent implements OnInit {
   constructor(private authSrv: AuthService, private locationSrv: LocationService) {
     this.authSrv.user$.subscribe((_utente) => {
       this.utente = _utente;
+
+      if (this.utente) {
+        this.userId = this.utente.user.id;
+        this.recuperaPreferitiEStampa();
+      }
     });
-    this.userId = this.utente!.user.id;
   }
 
-  ngOnInit(): void {
+  ngOnInit(): void { }
 
+  recuperaPreferitiEStampa() {
     this.locationSrv.recuperaPreferiti(this.userId).subscribe((likes: Preferiti[]) => {
       this.preferiti = likes;
+
+      this.stampaPreferiti();
     })
-
-    this.stampaPreferiti();
   }
-
 
   stampaPreferiti() {
     this.preferiti.forEach((loc) => {

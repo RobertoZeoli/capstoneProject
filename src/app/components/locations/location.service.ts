@@ -23,10 +23,6 @@ export class LocationService {
     return this.http.get<Preferiti[]>(`${this.baseUrl}preferiti?userId=${userId}`)
   }
 
-  /* recuperaLocalita() {
-    return this.http.get<Locations[]>(`${this.baseUrl}id`)
-  } */
-
   aggiungiPreferito(preferito: Preferiti) {
     return this.http.post(`${this.baseUrl}preferiti`, preferito)
   }
