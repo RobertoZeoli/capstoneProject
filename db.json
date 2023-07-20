@@ -20,19 +20,16 @@
       "nome": "Mario",
       "cognome": "Rossi",
       "id": 7
+    },
+    {
+      "email": "prova@3",
+      "password": "$2a$10$VYpGTbOg3zGkT86OH46TVudi2m9SVm.Toa1i0PaQe8jjxboXNNsxu",
+      "nome": "prova",
+      "cognome": "prova2",
+      "id": 8
     }
   ],
   "preferiti": [
-    {
-      "userId": 7,
-      "locationId": 1,
-      "id": 1
-    },
-    {
-      "userId": 7,
-      "locationId": 7,
-      "id": 3
-    },
     {
       "userId": 7,
       "locationId": 4,
@@ -45,18 +42,23 @@
     },
     {
       "userId": 7,
-      "locationId": 9,
+      "locationId": 6,
       "id": 7
     },
     {
       "userId": 7,
-      "locationId": 6,
+      "locationId": 12,
       "id": 8
     },
     {
       "userId": 7,
-      "locationId": 5,
+      "locationId": 7,
       "id": 9
+    },
+    {
+      "userId": 7,
+      "locationId": 8,
+      "id": 10
     }
   ],
   "localita": [
